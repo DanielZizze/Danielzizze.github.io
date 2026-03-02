@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Argomenti del Giorno — Daniel Zizze</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="scanlines"></div>
+  <div class="noise"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="bracket">[</span>
+        <span class="name" id="typed-name"></span>
+        <span class="cursor-blink">_</span>
+        <span class="bracket">]</span>
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">// PROJECTS</a>
+        <a href="lezioni.html" class="nav-link active">// ARGOMENTI</a>
+        <a href="https://github.com/Zuccante/4id-consegne-2025-2026-DanielZizze" target="_blank" class="nav-link nav-gh">⌥ GITHUB</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-tag">LOG_ACCADEMICO // LEZIONI // 4ID</div>
+      <h1 class="hero-title">ARGOMENTI<br><span class="accent">DEL GIORNO</span></h1>
+      <p class="hero-sub">Registro degli argomenti trattati dai professori Seno, Trevisan e Kosinskiy</p>
+    </section>
+
+    <section class="projects" id="lezioni">
+      <div class="section-header">
+        <span class="sh-line"></span>
+        <span class="sh-label">// PROFESSORI</span>
+        <span class="sh-line"></span>
+      </div>
+
+      <div class="prof-tabs">
+        <button class="tab-btn active" data-prof="seno">SENO</button>
+        <button class="tab-btn" data-prof="trevisan">TREVISAN</button>
+        <button class="tab-btn" data-prof="kosinskiy">KOSINSKIY</button>
+      </div>
+
+      <div class="topic-panels">
+
+        <!-- SENO -->
+        <div class="topic-panel active" id="panel-seno">
+          <div class="cards-grid lezioni-grid">
+            <div class="card">
+              <div class="card-code">ARG_01</div>
+              <div class="card-title">Algoritmi di Ordinamento</div>
+              <div class="card-desc">Bubble sort, selection sort, insertion sort. Complessità temporale e spaziale degli algoritmi.</div>
+              <div class="card-tags"><span class="tag">informatica</span><span class="tag">algoritmi</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_02</div>
+              <div class="card-title">Ricorsione</div>
+              <div class="card-desc">Funzioni ricorsive, casi base e ricorsivi. Esempi pratici: fattoriale, Fibonacci, frattali.</div>
+              <div class="card-tags"><span class="tag">programmazione</span><span class="tag">ricorsione</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_03</div>
+              <div class="card-title">Strutture Dati</div>
+              <div class="card-desc">Array, liste, stack, queue. Operazioni fondamentali e casi d'uso.</div>
+              <div class="card-tags"><span class="tag">strutture dati</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_04</div>
+              <div class="card-title">Frattali e Von Koch</div>
+              <div class="card-desc">Generazione di frattali tramite ricorsione. Fiocco di neve di Von Koch e curva di Koch.</div>
+              <div class="card-tags"><span class="tag">grafica</span><span class="tag">frattali</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TREVISAN -->
+        <div class="topic-panel" id="panel-trevisan">
+          <div class="cards-grid lezioni-grid">
+            <div class="card">
+              <div class="card-code">ARG_01</div>
+              <div class="card-title">HTML5 Semantico</div>
+              <div class="card-desc">Struttura semantica delle pagine web. Tag header, nav, main, section, article, footer.</div>
+              <div class="card-tags"><span class="tag">web</span><span class="tag">html</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_02</div>
+              <div class="card-title">CSS Avanzato</div>
+              <div class="card-desc">Flexbox, Grid Layout, variabili CSS, animazioni e transizioni. Responsive design.</div>
+              <div class="card-tags"><span class="tag">css</span><span class="tag">design</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_03</div>
+              <div class="card-title">JavaScript DOM</div>
+              <div class="card-desc">Manipolazione del DOM, eventi, fetch API, async/await e gestione delle promesse.</div>
+              <div class="card-tags"><span class="tag">javascript</span><span class="tag">dom</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_04</div>
+              <div class="card-title">API REST e Fetch</div>
+              <div class="card-desc">Chiamate HTTP, JSON, endpoint RESTful. Integrazione di API esterne nelle applicazioni web.</div>
+              <div class="card-tags"><span class="tag">api</span><span class="tag">fetch</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- KOSINSKIY -->
+        <div class="topic-panel" id="panel-kosinskiy">
+          <div class="cards-grid lezioni-grid">
+            <div class="card">
+              <div class="card-code">ARG_01</div>
+              <div class="card-title">Matematica Discreta</div>
+              <div class="card-desc">Logica proposizionale, insiemi, relazioni. Basi della matematica applicata all'informatica.</div>
+              <div class="card-tags"><span class="tag">matematica</span><span class="tag">logica</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_02</div>
+              <div class="card-title">Grafi e Alberi</div>
+              <div class="card-desc">Teoria dei grafi, alberi binari, visita in ampiezza e profondità (BFS/DFS).</div>
+              <div class="card-tags"><span class="tag">grafi</span><span class="tag">strutture</span></div>
+            </div>
+            <div class="card">
+              <div class="card-code">ARG_03</div>
+              <div class="card-title">Probabilità</div>
+              <div class="card-desc">Calcolo delle probabilità, eventi indipendenti, distribuzione binomiale.</div>
+              <div class="card-tags"><span class="tag">matematica</span><span class="tag">probabilità</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>DANIEL ZIZZE © 2025-2026</span>
+    <span class="sep">|</span>
+    <a href="https://github.com/Zuccante/4id-consegne-2025-2026-DanielZizze" target="_blank">GITHUB SCOLASTICO</a>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="lezioni.js"></script>
+</body>
+</html>
