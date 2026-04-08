@@ -55,10 +55,17 @@ const projects = [
   },
   {
     code: 'L006',
-    title: 'Pigregco',
+    title: 'pitrapez',
     desc: 'Progetto creativo con implementazione di algoritmi e interfaccia interattiva.',
     tags: ['javascript', 'interattivo'],
-    url: 'https://github.com/Zuccante/4id-consegne-2025-2026-DanielZizze/tree/main/L006_Pigregco'
+    url: 'https://github.com/Zuccante/4id-consegne-2025-2026-DanielZizze/tree/main/L006_pitrapez'
+  },
+   {
+    code: 'L007',
+    title: 'montecarlo',
+    desc: 'Progetto creativo con implementazione di algoritmi e interfaccia interattiva.',
+    tags: ['javascript'],
+    url: 'https://github.com/Zuccante/4id-consegne-2025-2026-DanielZizze/tree/main/L007_montecarlo'
   },
   {
     code: 'P001',
